@@ -4,7 +4,7 @@ from tensorflow.keras.layers import Dense
 
 model = Sequential([
     Dense(64, activation='elu', input_shape=(32, ), # We can specify initializers
-          kernel_initializer='he', bias_initializer='zeros'),
+          kernel_initializer='he_uniform', bias_initializer='zeros'),
     Dense(1, activation='sigmoid')
 ])
 

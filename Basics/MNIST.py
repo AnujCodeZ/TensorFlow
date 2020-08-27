@@ -4,7 +4,7 @@ from tensorflow import keras
 class MyCallback(keras.callbacks.Callback):
     def on_epoch_end(self, epoch, logs={}):
         if(logs.get('loss')<0.3):
-            print('Reached 70\% accuracy so stop training.')
+            print('Reached 70% accuracy so stop training.')
             self.model.stop_training = True
 
 callbacks = MyCallback()

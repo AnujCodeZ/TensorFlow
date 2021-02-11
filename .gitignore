@@ -2,3 +2,4 @@
 venv/
 __pycache__/
 *.h5
+my_logs/
